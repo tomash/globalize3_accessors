@@ -31,6 +31,7 @@ GEM
       rbx-require-relative (> 0.0.4)
     mocha (0.9.12)
     pathname_local (0.0.2)
+    rake (0.8.7)
     rbx-require-relative (0.0.5)
     ruby-debug (0.10.4)
       columnize (>= 0.1)
@@ -51,6 +52,7 @@ DEPENDENCIES
   globalize3_accessors!
   mocha
   pathname_local
+  rake (= 0.8.7)
   ruby-debug
   sqlite3-ruby
   test_declarative

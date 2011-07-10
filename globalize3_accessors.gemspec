@@ -17,6 +17,7 @@ Gem::Specification.new do |s|
   s.add_dependency 'globalize3', '>= 0.1.0'
   #s.add_dependency 'paper_trail',  '~> 2'
 
+  s.add_development_dependency 'rake', '0.8.7'
   s.add_development_dependency 'database_cleaner', '0.5.2'
   s.add_development_dependency 'mocha'
   s.add_development_dependency 'pathname_local'
