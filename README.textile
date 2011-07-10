@@ -1,0 +1,35 @@
+h1. Globalize3 Accessors
+
+h2. Introduction
+
+Generator of easy accessor methods for models using "Globalize3":http://github.com/svenfuchs/globalize3.
+
+Use globalize_accessors with list of translated fields you want easy access to and extra :locales array listing locales for which you want the accessors to be generated.
+
+This way a single form can be used to edit given model fields with all anticipated translations.
+
+
+h2. Installation
+
+Add this line to Gemfile:
+
+  gem "globalize3_accessors", :git => 'git://github.com/tomash/globalize3_accessors.git'
+
+h2. Example
+
+Definition like this:
+
+  class Product
+    translates :title, :description
+    globalize_accessors :pl, :en, :de
+  end
+
+Gives you methods: title_pl, title_en, title_de, title_pl=, title_en=, title_de= (and similar set of description_* methods). And they work seamlessly with Globalize3 (not even touching the "core" title, title= methods used by Globalize3 itself).
+
+h2. TODO
+
+* Make it work with full-blown locales including dash character (minus sign) like en-US, en-GB, pl-PL etc.
+
+h2. License
+
+Copyright (c) 2011 Tomek "Tomash" Stachewicz ("homepage":http://tomash.wrug.eu), released under the MIT license.
