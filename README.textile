@@ -13,16 +13,16 @@ h2. Installation
 
 Add this line to Gemfile:
 
-  gem "globalize3_accessors", :git => 'git://github.com/tomash/globalize3_accessors.git'
+    gem "globalize3_accessors", :git => 'git://github.com/tomash/globalize3_accessors.git'
 
 h2. Example
 
 Definition like this:
 
-  class Product
-    translates :title, :description
-    globalize_accessors :pl, :en, :de
-  end
+    class Product
+      translates :title, :description
+      globalize_accessors :pl, :en, :de
+    end
 
 Gives you methods: title_pl, title_en, title_de, title_pl=, title_en=, title_de= (and similar set of description_* methods). And they work seamlessly with Globalize3 (not even touching the "core" title, title= methods used by Globalize3 itself).
 
